@@ -1,0 +1,19 @@
+// ------- vars-----
+$blue: #2b2f5f;
+
+
+@import "font.scss";
+@import "_misc/mixins.scss";
+@import "_misc/adjustment.scss";
+
+
+// ---- styles-----
+
+@import "sections/header.scss";
+@import "sections/subheader.scss";
+@import "sections/about.scss";
+@import "sections/products.scss";
+@import "sections/team.scss";
+@import "sections/questions.scss";
+@import "sections/map.scss";
+@import "sections/footer.scss";

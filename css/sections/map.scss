@@ -1,0 +1,17 @@
+.map {
+	background: url("../image/bg/map-bg.png");
+	min-height: 517px;
+	position: relative;
+}
+.map {
+	&:after {
+		content: "";
+		display: block;
+		background-image: url("../image/icons/map-check.png");
+		width: 42px;
+		height: 59px;
+		position: absolute;
+		top: 232px;
+		left: 360px;
+	}
+}

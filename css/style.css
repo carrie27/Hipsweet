@@ -1,0 +1,71 @@
+
+
+/*------------main styles------*/
+
+html {
+	font-size: 16px;
+}
+
+
+
+/*------------- header style------*/
+* {
+	outline: 1px solid red;
+}
+
+.page-header {
+	height: 80px;
+	line-height: 80px;
+
+}
+.page-header__logo {
+	float: left;
+	width: 25%;
+}
+.logo__pic {
+	vertical-align: middle;
+}
+.logo__title {
+	padding-left: 10px;
+	vertical-align: middle;
+}
+.page-header__nav {
+	float: left;
+	width: 60%;
+}
+.page-header__nav-item {
+	display: inline-block;
+	margin-right: 50px;
+}
+.page-header__search {
+	float: right;
+	width: 10%;
+}
+.search__pic {
+	display: inline-block;
+}
+.pic {
+	border-radius: 50%;
+	vertical-align: middle;
+}
+/*----------- sub header--------*/
+
+.promo__img, .promo__desc, .promo__info {
+	
+	float: left;
+	
+}
+.promo__img{
+	width: 200px;
+
+}
+.promo__desc {
+	width: 350px;
+	margin-right: 0;
+
+}
+.promo__info {
+	width: 100px;
+	margin-left: 0;
+}
+

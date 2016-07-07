@@ -1,0 +1,36 @@
+.questions {
+	background: url("../image/bg/questions-bg.png");
+	min-height: 760px;
+}
+.questions__title {
+	font-size: 40px;
+	color: #fff;
+	line-height: 81.44px;
+	text-align: center;
+	margin-bottom: 75px;
+}
+.questions__list-item {
+	line-height: 34.29px;
+	font-family: Arial, sans-serif;
+	font-size: 22px;
+	color: #fff;
+	margin-bottom: 40px;
+}
+#quest {
+	border-bottom: 3px dashed #fff;
+	padding-bottom: 4px;
+	cursor: pointer;
+}
+#answer1 {
+	display: none;
+	color: #fff;
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+	margin-left: 50px;
+}
+.active {
+	display: block;
+	&#quest {
+		color: #ffb100;
+	}
+}

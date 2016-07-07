@@ -1,0 +1,52 @@
+.promo-block {
+	min-height: 760px;
+	background: -webkit-linear-gradient(left, #df3e43 0%,#a8171d 100%)
+}
+.page-header {
+	height: 100px;
+	line-height: 100px;
+	@extend %clearfix;
+}
+.page-header__logo {
+	float: left;
+	width: 345px;
+}
+.logo__pic {
+	vertical-align: middle;
+	width: 81px;
+	height: 66px;
+}
+.logo__title {
+	vertical-align: middle;
+	font-size: 48px;
+	color: #fca211;
+}
+.page-header__nav {
+	float: left;
+	width: 535px;
+	margin-left: 105px;
+}
+.page-header__nav-item {
+	@extend %inline-block;
+	font-family: Arial;
+	font-size: 16px;
+	color: #fff;
+	margin-right: 40px;
+}
+.page-header__search {
+	float: right;
+	width: 110px;
+}
+.search__pic {
+	display: inline-block;
+}
+.pic1 {
+	background-color: rgba(255, 255, 255, .3);
+	border-radius: 50%;
+	vertical-align: middle;
+	padding: 10px;
+}
+.pic2 {
+	@extend .pic1;
+	margin-left: 30px;
+}

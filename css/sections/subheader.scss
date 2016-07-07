@@ -1,0 +1,197 @@
+.sub-header__promo {
+	@extend %clearfix;
+	padding-top: 80px;
+	position: relative;
+}
+.promo__left {
+	float: left;
+	width: 120px;
+	padding-top: 50px;
+}
+.promo__right {
+	float: right;
+	width: 900px;
+	@extend %clearfix;
+
+}
+.promo__img {
+	float: left;
+	width: 450px;
+}
+.promo__desc {
+	float: right;
+	width: 403px;
+}
+.promo__desc-title {
+	font-size: 62px;
+	color: #fff;
+}
+.promo__info-ingr {
+	text-align: center;
+	margin-bottom: 200px;
+}
+.promo__info-srok {
+	@extend .promo__info-ingr;
+	margin-bottom: 0;
+}
+.text {
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+	color: #fff;
+	line-height: 21px;
+	margin-bottom: 50px;
+}
+#info-text-hov {
+	display: none;
+	position: absolute;
+	left: 135px;
+	top: 70px;
+	width: 340px;
+	height: 230px;
+	background-color: rgba(255, 255, 255, .9);
+	border-radius: 30px;
+	padding: 40px 30px 0px 67px;
+}
+.show__info-text {
+	display: block;
+}
+#info-text-hov {
+	&:before {
+		content: "";
+		position: absolute;
+		left: -40px;
+		top: 60px;
+		border: 20px solid transparent;
+		border-right: 20px solid rgba(255, 255, 255, .9);
+	}
+}
+.hover__list {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	color: #959595;
+	text-align: left;
+	margin-bottom: 25px;
+}
+.hover__list-quantity {
+	text-align: right;
+}
+.flour {
+	&:before {
+		content: "";
+		background: url("../image/icons/info-hov1.png");
+		width: 21px;
+		height: 21px;
+		display: block;
+		position: absolute;
+		left: 33px;
+	}
+	&:after {
+		content: "200 г.";
+		position: absolute;
+		left: 273px;
+	}
+}
+.egg {
+	&:before {
+		content: "";
+		background: url("../image/icons/info-hov2.png");
+		width: 21px;
+		height: 21px;
+		display: block;
+		position: absolute;
+		left: 33px;
+	}
+	&:after {
+		content: "3 шт.";
+		position: absolute;
+		left: 273px;
+	}
+}
+.sugar {
+	&:before {
+		content: "";
+		background: url("../image/icons/info-hov3.png");
+		width: 21px;
+		height: 21px;
+		display: block;
+		position: absolute;
+		left: 33px;
+	}
+	&:after {
+		content: "200 г.";
+		position: absolute;
+		left: 273px;
+	}
+}
+.butter {
+	&:before {
+		content: "";
+		background: url("../image/icons/info-hov4.png");
+		width: 21px;
+		height: 21px;
+		display: block;
+		position: absolute;
+		left: 33px;
+	}
+	&:after {
+		content: "50 г.";
+		position: absolute;
+		left: 273px;
+	}
+}
+.milk {
+	&:before {
+		content: "";
+		background: url("../image/icons/info-hov5.png");
+		width: 21px;
+		height: 21px;
+		display: block;
+		position: absolute;
+		left: 33px;
+	}
+	&:after {
+		content: "100 г.";
+		position: absolute;
+		left: 273px;
+	}
+}
+.info-pic {
+	background-color: rgba(255, 255, 255, .3);
+	border-radius: 50%;
+	padding: 10px;
+}
+.srok-text {
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+	color: #e46d6f;
+}
+.srok {
+	font-family: Malina, sans-serif;
+	font-size: 24px;
+	color: #fff;
+}
+.promo__desc-order {
+	@extend %clearfix;
+}
+.order__price {
+	vertical-align: middle;
+	font-size: 62px;
+	color: #fff;
+}
+.order__price {
+	&:after {
+		content: "\00a4";
+	}
+}
+
+.order__btn {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #a4151c;
+	background-color: #fca211;
+	padding: 15px 25px;
+	border-radius: 30px;
+	vertical-align: middle;
+	margin-left: 70px;
+}

@@ -1,0 +1,143 @@
+.our-team {
+	background: -webkit-radial-gradient(center, ellipse cover, #faf9f8 13%,#f6f6f5 37%,#e6e7e7 57%);
+	min-height: 1422px;
+}
+.our-team__title {
+	@extend %clearfix;
+	padding-top: 105px;
+}
+.our-team__heading {
+	width: 315px;
+	float: left;
+}
+.our-team__list {
+	float: right;
+	width: 660px;
+}
+.our-team__list-item {
+	@extend %inline-block;
+	width: 170px;
+	vertical-align: top;
+	margin-right: 45px;
+}
+
+.item__title {
+	font-size: 30px;
+	color: $blue;
+	margin-bottom: 10px;
+}
+.item__prof {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	color: #747474;
+}
+.our-team__block {
+	margin-bottom: 150px;
+}
+.our-team__text {
+	@extend %clearfix;
+}
+.our-team__text-left {
+	float: left;
+	width: 270px;
+	p {
+		font-family: Arial, sans-serif;
+		font-size: 14px;
+		font-style: italic;
+		color: #747474;
+	}
+	.select {
+	color: #484848;
+	font-weight: bold;
+}
+}
+.our-team__text-right {
+	float: right;
+	width: 340px;
+	p {
+		font-family: Arial, sans-serif;
+		font-size: 14px;
+		font-style: italic;
+		color: #747474;
+	}
+}
+form {
+	margin-top: 35px;
+
+}
+.form__block {
+	width: 843px;
+	min-height: 408px;
+	margin: 0 auto;
+	background: url("../image/bg/form-bg.png");
+	@extend %clearfix;
+	position: relative;
+}
+.form__block-left {
+	float: left;
+	width: 430px;
+	font-size: 64px;
+	color: #fff;
+	text-align: center;
+	padding: 105px 60px 90px 60px;
+	box-sizing: border-box;
+}
+.form__block-right {
+	float: right;
+	width: 410px;
+	min-height: 408px;
+	border-radius: 0 20px 20px 0;
+	background: rgba(0, 0, 0, .7);
+	padding-right: 90px;
+	padding-left: 40px;
+	box-sizing: border-box;
+}
+.form__input {
+	display: block;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid #fff;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	color: #fff;
+	background: transparent;
+	padding: 43px 0 15px;
+	width: 100%;
+}
+input[type=tel] {
+	margin-bottom: 40px;
+}
+.callback {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	color: #fff;
+	padding-left: 10px;
+}
+.form__btn {
+	background: url("../image/icons/btn-fon.png");
+	position: absolute;
+	width: 96px;
+	height: 96px;
+	left: 785px;
+	top: 345px;
+}
+.form__btn-bg {
+	background: url("../image/icons/arrow-btn.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 96px;
+	height: 96px;
+}
+input[type=button] {
+	background: transparent;
+	border: none;
+	width: 96px;
+	height: 96px;	
+}
+.active-team {
+	background-color: #893213;
+	border-radius: 10px;
+		&.item__title {
+			color: #ffa92b;
+	}
+}

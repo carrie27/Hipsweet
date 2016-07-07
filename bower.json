@@ -1,0 +1,17 @@
+{
+  "name": "irina",
+  "authors": [
+    "irina <carrie2703@yandex.ru>"
+  ],
+  "description": "hipsweet",
+  "main": "index.html",
+  "keywords": [
+    "hipsweet"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "jquery": "^3.0.0",
+    "mask": "^0.1.0"
+  }
+}

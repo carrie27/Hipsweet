@@ -1,0 +1,95 @@
+.page-footer {
+	height: 125px;
+	line-height: 125px;
+	@extend %clearfix;
+	background-color: #fff;
+}
+.page-footer__logo {
+	float: left;
+	width: 235px;
+	
+}
+.footer__title {
+	font-size: 29.65px;
+	color: #fca211;
+	margin-left: 5px;
+	vertical-align: middle;
+}
+.footer__pic {
+	width: 66px;
+	height: 55px;
+	vertical-align: middle;
+}
+.page-footer__copyright {
+	float: left;
+	width: 550px;
+}
+.copy-text {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: #8d8d8d;
+}
+.copy-adress {
+	@extend.copy-text;
+	margin-left: 50px;
+}
+.page-footer__social {
+	float: right;
+	width: 240px;
+}
+.social__list-item {
+	@extend %inline-block;
+	margin-right: 34px;
+	cursor: pointer;
+}
+.fb {
+	background: url("../image/icons/fb.png");
+	width: 11px;
+	height: 22px;
+}
+.fb {
+	&:hover {
+		background: url("../image/icons/fb-h.png");
+	}
+}
+.inst {
+	background: url("../image/icons/inst.png");
+	width: 22px;
+	height: 22px;
+}
+.inst {
+	&:hover {
+		background: url("../image/icons/inst-h.png");
+	}
+}
+.ok {
+	background: url("../image/icons/ok.png");
+	width: 13px;
+	height: 22px;
+}
+.ok {
+	&:hover {
+		background: url("../image/icons/ok-h.png");
+	}
+}
+.tw {
+	background: url("../image/icons/tw.png");
+	width: 22px;
+	height: 18px;
+}
+.tw {
+	&:hover {
+		background: url("../image/icons/tw-h.png");
+	}
+}
+.vk {
+	background: url("../image/icons/vk.png");
+	width: 22px;
+	height: 13px;
+	margin-right: 0;
+}
+.vk {
+	&:hover {
+		background: url("../image/icons/vk-h.png");
+	}
+}

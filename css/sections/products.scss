@@ -1,0 +1,118 @@
+.products {
+	background-image: url(../image/bg/products-bg.png);
+	background-repeat: repeat;
+	min-height: 1130px;
+}
+.products-bg {
+	background: -webkit-linear-gradient(left, rgba(255, 168, 46, .8) 0%,rgba(255, 180, 11, .8)100%);
+	min-height: 1130px;
+}
+.products__heading {
+	padding-top: 120px;
+	margin-bottom: 30px;
+}
+.products__title {
+	text-align: center;
+}
+.products__text {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	color: #883213;
+	text-align: center;
+	line-height: 19.2px;
+	padding: 0 80px;
+}
+.products-row {
+	@extend %clearfix;
+}
+
+.products__list-item {
+	float: left;
+	width: 250px;
+	margin-left: 33px;
+}
+.products__list-item {
+	&:first-child {
+		margin-left: 0;
+	}
+	&:last-child {
+		margin-right: 0;
+	}
+}
+.products__list-item__title {
+	font-size: 32px;
+	color: $blue;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.products__list-item__desc {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 19.2px;
+	color: #ab594a;
+	text-align: center;
+}
+.item-img1 {
+	width: 250px;
+	height: 230px;
+	background-image: url("../image/decor/product-img1.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+.item-img2 {
+	width: 250px;
+	height: 230px;
+	background-image: url("../image/decor/product-img2.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80%;
+}
+.item-img3 {
+	width: 250px;
+	height: 230px;
+	background-image: url("../image/decor/product-img3.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80%;
+}
+.item-img4 {
+	width: 250px;
+	height: 230px;
+	background-image: url("../image/decor/product-img4.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80%;
+}
+.item-img5 {
+	width: 250px;
+	height: 230px;
+	background-image: url("../image/decor/product-img5.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80%;
+}
+.item-img6 {
+	width: 250px;
+	height: 230px;
+	background-image: url("../image/decor/product-img6.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80%;
+}
+.item-img7 {
+	width: 250px;
+	height: 230px;
+	background-image: url("../image/decor/product-img7.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80%;
+}
+.item-img8 {
+	width: 250px;
+	height: 230px;
+	background-image: url("../image/decor/product-img8.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80%;
+}
