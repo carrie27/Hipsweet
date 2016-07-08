@@ -33,3 +33,15 @@ $(function() {
 		$('#phone').mask('8(000)000-00-00');
 	});
 })();
+
+(function() {
+	$(function() {
+		$('.page-header__nav-list li').mouseover(function() {
+			$(this).children('.team__drop').slideDown('slow');
+			$(this).mouseleave(function() {
+				$(this).children('.team__drop').slideUp('slow');
+			});
+		});
+	});
+		
+})();
