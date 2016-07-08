@@ -24,7 +24,6 @@
 }
 .page-header__nav {
 	float: left;
-	width: 535px;
 	margin-left: 105px;
 }
 .page-header__nav-item {
@@ -41,20 +40,22 @@
 }
 .page-header__search {
 	float: right;
-	width: 110px;
+	width: 120px;
 }
-.search__pic {
+.search__link {
 	display: inline-block;
 }
-.pic1 {
-	background-color: rgba(255, 255, 255, .3);
-	border-radius: 50%;
-	vertical-align: middle;
-	padding: 10px;
+.search__pic {
+	&:hover {
+		background-color: #ffaf28;
+		border-radius: 50%;
+	}
 }
-.pic2 {
-	@extend .pic1;
-	margin-left: 30px;
+.search__pic {
+	vertical-align: middle;
+}
+.lk {
+	margin-right: 15px;
 }
 .team__drop {
 	display: none;

@@ -19,6 +19,10 @@
   clear: both;
 }
 
+* {
+  outline: 1px solid red;
+}
+
 body, html {
   width: 100%;
   height: 100%;
@@ -54,13 +58,6 @@ a {
   min-height: 100%;
   overflow: hidden;
   min-width: 1120px;
-}
-
-.wrapper:after {
-  content: "";
-  height: 125px;
-  display: block;
-  overflow: hidden;
 }
 
 .heading {
@@ -118,7 +115,6 @@ a {
 
 .page-header__nav {
   float: left;
-  width: 535px;
   margin-left: 105px;
 }
 
@@ -135,22 +131,24 @@ a {
 
 .page-header__search {
   float: right;
-  width: 110px;
+  width: 120px;
 }
 
-.search__pic {
+.search__link {
   display: inline-block;
 }
 
-.pic1, .pic2 {
-  background-color: rgba(255, 255, 255, 0.3);
+.search__pic:hover {
+  background-color: #ffaf28;
   border-radius: 50%;
-  vertical-align: middle;
-  padding: 10px;
 }
 
-.pic2 {
-  margin-left: 30px;
+.search__pic {
+  vertical-align: middle;
+}
+
+.lk {
+  margin-right: 15px;
 }
 
 .team__drop {
@@ -353,10 +351,8 @@ a {
   left: 273px;
 }
 
-.info-pic {
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 50%;
-  padding: 10px;
+.info-pic:hover {
+  background-image: url("../image/icons/ingr-h.png");
 }
 
 .srok-text {
@@ -391,6 +387,11 @@ a {
   border-radius: 30px;
   vertical-align: middle;
   margin-left: 70px;
+}
+
+.order__btn:hover {
+  background-color: #641a00;
+  color: #fca211;
 }
 
 .about {
@@ -693,27 +694,28 @@ input[type=tel] {
 }
 
 .form__btn {
-  background: url("../image/icons/btn-fon.png");
+  background-color: #ffb100;
+  border-radius: 50%;
+  background-image: url("../image/icons/arrow-btn.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
   position: absolute;
+  display: block;
   width: 96px;
   height: 96px;
   left: 785px;
   top: 345px;
 }
 
-.form__btn-bg {
-  background: url("../image/icons/arrow-btn.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 96px;
-  height: 96px;
+.form__btn:hover {
+  background-color: #641a00;
+  background-image: url("../image/icons/arrow-btn-h.png");
+  cursor: pointer;
 }
 
-input[type=button] {
-  background: transparent;
-  border: none;
-  width: 96px;
-  height: 96px;
+.team-item {
+  display: none;
 }
 
 .active-team {
@@ -738,7 +740,7 @@ input[type=button] {
   margin-bottom: 75px;
 }
 
-.questions__list-item {
+.acco-item {
   line-height: 34.29px;
   font-family: Arial, sans-serif;
   font-size: 22px;
@@ -746,13 +748,17 @@ input[type=button] {
   margin-bottom: 40px;
 }
 
-#quest {
+.acco__trigger {
   border-bottom: 3px dashed #fff;
   padding-bottom: 4px;
   cursor: pointer;
 }
 
-#answer1 {
+.acco__number {
+  margin-right: 20px;
+}
+
+.acco__content {
   display: none;
   color: #fff;
   font-family: Arial, sans-serif;

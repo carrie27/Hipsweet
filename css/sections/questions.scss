@@ -9,19 +9,22 @@
 	text-align: center;
 	margin-bottom: 75px;
 }
-.questions__list-item {
+.acco-item {
 	line-height: 34.29px;
 	font-family: Arial, sans-serif;
 	font-size: 22px;
 	color: #fff;
 	margin-bottom: 40px;
 }
-#quest {
+.acco__trigger {
 	border-bottom: 3px dashed #fff;
 	padding-bottom: 4px;
 	cursor: pointer;
 }
-#answer1 {
+.acco__number {
+	margin-right: 20px;
+}
+.acco__content {
 	display: none;
 	color: #fff;
 	font-family: Arial, sans-serif;

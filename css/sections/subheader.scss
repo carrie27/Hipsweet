@@ -156,9 +156,9 @@
 	}
 }
 .info-pic {
-	background-color: rgba(255, 255, 255, .3);
-	border-radius: 50%;
-	padding: 10px;
+	&:hover {
+		background-image: url('../image/icons/ingr-h.png');
+	}
 }
 .srok-text {
 	font-family: Arial, sans-serif;
@@ -194,4 +194,10 @@
 	border-radius: 30px;
 	vertical-align: middle;
 	margin-left: 70px;
+}
+.order__btn {
+	&:hover {
+		background-color: #641a00;
+		color: #fca211;
+	}
 }
