@@ -67,10 +67,26 @@
 })();
 
 (function() {
-	$('.our-team__link').on('click', function(e){
+	$('.our-team__list-item').on('click', function(e){
 		    e.preventDefault();
-	$(.'our-team__list li').mouseover(function() {
-		$(.'our-team__list-item').addClass('active-team')
+
+	var
+		$this = $(this),
+		tabsContent = $('.team-item'),
+		ndx = $(this).index();
+
+		$this
+		.addClass('active')
+		.siblings()
+		.removeClass('active');
+
+		tabsContent
+		.eq(ndx)
+		.addClass('active')
+		.siblings()
+		.removeClass('active');
+
+
 	});
 
 })();

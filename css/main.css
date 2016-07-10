@@ -13,7 +13,7 @@
   display: inline-block;
 }
 
-.container:after, .main-container:after, .page-header:after, .sub-header__promo:after, .promo__right:after, .promo__desc-order:after, .products-row:after, .our-team__title:after, .our-team__text:after, .form__block:after, .page-footer:after {
+.container:after, .main-container:after, .page-header:after, .sub-header__promo:after, .promo__right:after, .promo__desc-order:after, .products-row:after, .our-team__title:after, .our-team__desk:after, .our-team__text:after, .form__block:after, .our-team__tabs:after, .page-footer:after {
   content: "";
   display: block;
   clear: both;
@@ -573,22 +573,85 @@ a {
 
 .our-team__title {
   padding-top: 105px;
+  margin-bottom: 115px;
 }
 
 .our-team__heading {
   width: 315px;
   float: left;
+  margin-right: 50px;
+}
+
+.active {
+  display: inline-block;
+}
+
+.our-team__tabs {
+  background-image: url("../image/");
 }
 
 .our-team__list {
   float: right;
-  width: 660px;
+  width: 715px;
+  position: relative;
+  margin-right: -20px;
 }
 
 .our-team__list-item {
-  width: 170px;
-  vertical-align: top;
-  margin-right: 45px;
+  width: 33.3%;
+}
+
+.our-team__list-item.active:hover {
+  background-color: #893213;
+  border-radius: 10px;
+}
+
+.our-team__link {
+  display: block;
+  padding: 22px 25px 22px 28px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.our-team__link:hover {
+  background-color: #893213;
+  border-radius: 10px;
+}
+
+.our-team__link:hover .item__title {
+  color: #ffa92b;
+}
+
+.our-team__link:hover .item__prof {
+  color: #fff;
+}
+
+.our-team__list-item.active .our-team__link {
+  background-color: #893213;
+  border-radius: 10px;
+}
+
+.our-team__list-item.active .our-team__link:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border: 15px solid transparent;
+  border-top: 15px solid #893213;
+  margin-left: -18px;
+}
+
+.our-team__list-item.active .our-team__link .item__title {
+  color: #ffa92b;
+}
+
+.our-team__list-item.active .our-team__link .item_prof {
+  color: #fff;
+}
+
+.our-team__desk {
+  margin-bottom: 150px;
 }
 
 .item__title {
@@ -718,13 +781,8 @@ input[type=tel] {
   display: none;
 }
 
-.active-team {
-  background-color: #893213;
-  border-radius: 10px;
-}
-
-.active-team.item__title {
-  color: #ffa92b;
+.team-item.active {
+  display: block;
 }
 
 .questions {
