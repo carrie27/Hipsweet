@@ -1,6 +1,8 @@
 .promo-block {
 	min-height: 760px;
-	background: -webkit-linear-gradient(left, #df3e43 0%,#a8171d 100%)
+	background: -webkit-linear-gradient(left, #df3e43 0%,#a8171d 100%);
+	background:	-moz-linear-gradient(left, #df3e43 0%,#a8171d 100%);
+	background:	-o-linear-gradient(left, #df3e43 0%,#a8171d 100%);
 }
 .page-header {
 	height: 100px;
@@ -48,7 +50,7 @@
 .search__pic {
 	&:hover {
 		background-color: #ffaf28;
-		border-radius: 50%;
+		@include border-radius(50%);
 	}
 }
 .search__pic {
@@ -62,12 +64,11 @@
 	position: absolute;
 	left: 775px;
 	top: 97px;
-	width: 225px;
-	height: 330px;
+	min-width: 225px;
 	background-color: rgba(255, 255, 255, .9);
-	border-radius: 30px;
+	@include border-radius(30px);
 	padding: 40px 0;
-	box-sizing: border-box;
+	z-index: 1000;
 }
 .team__drop {
 	&:before {
@@ -81,12 +82,32 @@
 	}
 }
 .team__drop-list__item {
+	position: relative;
 	font-family: Arial, sans-serif;
 	font-size: 16px;
 	color: #959595;
 	line-height: 39px;
 	text-align: center;
+		
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			border: 9px solid transparent;
+			top: 22%;
+		}
 }
-.drop__item--a {
-	font-weight: bold;
+.team__drop-list__item:hover:before {
+	border-left: 9px solid #ffaf28;
+}
+.drop__item {
+	&:hover {
+			font-weight: bold;
+		}
+}
+.bx-wrapper {
+	border: none;
+	background: -webkit-linear-gradient(left, #df3e43 0%,#a8171d 100%);
+	background:	-moz-linear-gradient(left, #df3e43 0%,#a8171d 100%);
+	background:	-o-linear-gradient(left, #df3e43 0%,#a8171d 100%);
 }

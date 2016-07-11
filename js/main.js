@@ -40,11 +40,11 @@
 
 })();
 
-// (function(){
-// 	$(document).ready(function(){
-// 		$('.slider__list').bxSlider();
-// 	});
-// })();
+(function(){
+	$(document).ready(function(){
+		$('.slider__list').bxSlider();
+	});
+})();
 
 
 (function(){

@@ -5,6 +5,8 @@
 }
 .products-bg {
 	background: -webkit-linear-gradient(left, rgba(255, 168, 46, .8) 0%,rgba(255, 180, 11, .8)100%);
+	background:	-moz-linear-gradient(left, rgba(255, 168, 46, .8) 0%,rgba(255, 180, 11, .8)100%);
+	background:	-o-linear-gradient(left, rgba(255, 168, 46, .8) 0%,rgba(255, 180, 11, .8)100%);
 	min-height: 1130px;
 }
 .products__heading {

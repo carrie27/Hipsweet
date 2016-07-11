@@ -3,6 +3,7 @@ $container-width: 1100px;
 
 * {
 	outline: 1px solid red;
+	box-sizing: border-box;
 }
 body, html {
 	width: 100%;
@@ -34,12 +35,15 @@ a {
 	overflow: hidden;
 	min-width: $container-width + 20px;
 }
-
+h1, h2, h3, h4, h5, h6{
+	margin-top: 0;
+	margin-bottom: 0;
+	font-weight: normal;
+}
 .heading {
 	font-size: 62px;
 	color: $blue;
 }
-
 .container {
 	margin: 0 auto;
 	width: $container-width;

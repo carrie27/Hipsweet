@@ -9,9 +9,10 @@
 		clear: both;
 	}
 }
-@mixin linear-gradient($value) {
-	-webkit-linear-gradient: $value;
-     -moz-linear-gradient: $value;
-      -ms-linear-gradient: $value;
-          linear-gradient: $value;
+@mixin border-radius($value) {
+	-webkit-border-radius: $value;
+     -moz-border-radius: $value;
+      -ms-border-radius: $value;
+          border-radius: $value;
 }
+
