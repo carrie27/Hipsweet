@@ -9,6 +9,7 @@
 	line-height: 100px;
 	@extend %clearfix;
 	position: relative;
+	margin-bottom: 40px;
 }
 .page-header__logo {
 	float: left;
@@ -105,9 +106,4 @@
 			font-weight: bold;
 		}
 }
-.bx-wrapper {
-	border: none;
-	background: -webkit-linear-gradient(left, #df3e43 0%,#a8171d 100%);
-	background:	-moz-linear-gradient(left, #df3e43 0%,#a8171d 100%);
-	background:	-o-linear-gradient(left, #df3e43 0%,#a8171d 100%);
-}
+

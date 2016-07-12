@@ -29,16 +29,6 @@
 
  
 
-(function() {
-
-	$(function() {
-	$('#ingr').click(function() {
-		$('#info-text-hov').slideToggle('slow');
-		$(this).toggleClass('show__info-text'); return false
-	});
-});
-
-})();
 
 (function(){
 	$(document).ready(function(){
