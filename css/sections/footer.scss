@@ -1,8 +1,8 @@
 .page-footer {
 	height: 125px;
-	line-height: 125px;
 	@extend %clearfix;
 	background-color: #fff;
+	padding: 40px 0;
 }
 .page-footer__logo {
 	float: left;
@@ -21,25 +21,27 @@
 	vertical-align: middle;
 }
 .page-footer__copyright {
-	float: left;
-	width: 550px;
-}
-.copy-text {
+	display: inline-block;
+	vertical-align: middle;
 	font-family: Arial, sans-serif;
 	font-size: 14px;
 	color: #8d8d8d;
+	height: 60px;
 }
-.copy-adress {
-	@extend.copy-text;
-	margin-left: 50px;
+.copyright__list-item {
+	@extend %inline-block;
+	padding-top: 25px;
+	margin-left: 40px;
 }
 .page-footer__social {
-	float: right;
-	width: 240px;
+	display: inline-block;
+	text-align: right;
+	width: 270px;
 }
 .social__list-item {
 	@extend %inline-block;
-	margin-right: 34px;
+	margin-right: 30px;
+	vertical-align: bottom;
 	cursor: pointer;
 }
 .fb {

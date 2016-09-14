@@ -32,14 +32,79 @@
 .page-header__nav-item {
 	@extend %inline-block;
 	font-family: Arial;
+	position: relative;
 	font-size: 16px;
 	color: #fff;
 	margin-right: 60px;
+}
+.page-header__nav-item {
+	&:after {
+	content: '\02c7';
+	display: inline-block;
+	font-size: 18px;
+	position: absolute;
+	left: 77px;
+	top: 6px;
+	}
+}
+.page-header__nav-item {
+	&:hover {
+		&:after {
+		color: #faa827;
+		content: '\02c6';
+		}
+	}
 }
 .nav__link {
 	&:hover {
 		color: #faa827;
 	}
+}
+.noarr {
+	&:after {
+		content: '';
+	}
+}
+.noarr {
+	&:hover {
+		&:after {
+			content: '';
+		}
+	}
+}
+.sweet__drop-list {
+	@extend .team__drop;
+}
+.sweet__drop-list {
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		left: 90px;
+		top: -40px;
+		border: 20px solid transparent;
+		border-bottom: 20px solid rgba(255, 255, 255, .9);
+	}
+}
+.sweet__drop-list__item {
+	@extend .team__drop-list__item;
+}
+.company__drop-list {
+	@extend .team__drop;
+}
+.company__drop-list {
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		left: 90px;
+		top: -40px;
+		border: 20px solid transparent;
+		border-bottom: 20px solid rgba(255, 255, 255, .9);
+	}
+}
+.company__drop-list__item {
+	@extend .team__drop-list__item;
 }
 .page-header__search {
 	float: right;
@@ -63,7 +128,7 @@
 .team__drop {
 	display: none;
 	position: absolute;
-	left: 775px;
+	left: -77px;
 	top: 97px;
 	min-width: 225px;
 	background-color: rgba(255, 255, 255, .9);
@@ -102,8 +167,27 @@
 	border-left: 9px solid #ffaf28;
 }
 .drop__item {
+	color: #959595;
 	&:hover {
 			font-weight: bold;
 		}
+}
+.sweet__link {
+	color: #959595;
+	&:hover {
+		font-weight: bold;
+	}
+}
+.company__link {
+	color: #959595;
+	&:hover {
+		font-weight: bold;
+	}
+}
+.sweet__drop-list__item:hover:before {
+	border-left: 9px solid #ffaf28;
+}
+.company__drop-list__item:hover:before {
+	border-left: 9px solid #ffaf28;
 }
 

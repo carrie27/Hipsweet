@@ -1,5 +1,9 @@
 .questions {
 	background: url("../image/bg/questions-bg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: local;
+	color: white;
 	min-height: 760px;
 }
 .questions__title {
@@ -7,19 +11,55 @@
 	color: #fff;
 	line-height: 81.44px;
 	text-align: center;
-	margin-bottom: 75px;
+	padding: 40px 0;
 }
-.acco-item {
-	line-height: 34.29px;
+.acco {
 	font-family: Arial, sans-serif;
 	font-size: 22px;
 	color: #fff;
-	margin-bottom: 40px;
+}
+.acco-item {
+	margin-bottom: 30px;
+	&:hover {
+		& .acco__trigger {
+			border-bottom: 2px dashed #ffb100;
+		}
+	}
+}
+.acco__item {
+	&:hover {
+		& .acco__number {
+			color: #ffb100;
+		}
+	}
+}
+.acco__item:hover .acco__number {
+  color: #ffb100;
+}
+
+.acco__item.active .acco__trigger {
+  color: #ffb100;
+  border-bottom: 2px dashed transparent;
+}
+
+.acco__item.active .acco {
+  color: #ffb100;
+}
+
+.acco__item.active .acco__number {
+  color: #ffb100;
 }
 .acco__trigger {
-	border-bottom: 3px dashed #fff;
-	padding-bottom: 4px;
+	display: inline-block;
+	vertical-align: middle;
+	text-decoration: none;
+	font-size: 22px;
+	color: #fff;
+	border-bottom: 2px dashed #fff;
+	line-height: 42px;
+	outline: none;
 	cursor: pointer;
+	@include transition(all .2s);
 }
 .acco__number {
 	margin-right: 20px;
@@ -33,7 +73,8 @@
 }
 .active {
 	display: block;
-	&#quest {
+	& .acco__trigger {
 		color: #ffb100;
+		border: none;
 	}
 }
